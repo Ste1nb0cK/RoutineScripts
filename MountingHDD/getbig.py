@@ -12,7 +12,6 @@ if not os.path.exists(mount_direction):
     print("The mounting direction does not exists, creating it.")
     subprocess.run(["sudo", "mkdir", mount_direction], shell=False)
     print("Mounting direction created at {}".format(mount_direction))
-
 else:
     print("The mounting direction exists.")
 #identification of the device
